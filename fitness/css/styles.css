@@ -1,0 +1,514 @@
+body
+{
+	background-color: #1D1D1C; /*#FFFF99;*/	
+} 
+img
+{
+	max-width: 100%;
+}
+/*styles for mobile layout*/
+#container
+{
+/*	border: 1px solid red;*/
+	width: 100%; /*80%;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+header
+{
+	/*background-color: #FFFFFF;*/
+	/*margin-bottom: 20px;*/
+	/*margin-top: 0.2em;*/ /*10px;*/
+	text-align: center;
+	/*border-radius:0.5em;*/ /*10px;*/
+/*	box-shadow: 12px 12px 12px #404040;*/
+}
+nav
+{
+	font-family: Georgia, "Times New Roman", serif; 
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	/*padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-radius: 20px;*/
+	margin-top: -1.5em;
+}
+nav ul /*descendant element*/
+{
+padding: 0;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+}
+nav li
+{
+background-color: #9D9D93; /*#093;*/
+border-radius: 2em;
+list-style-type: none;
+margin: 0.3em;
+padding: 0.4em;
+}
+nav li a 
+{
+	color: #fff;
+	text-decoration: none; /*no underline*/
+}
+.mobile
+{
+/*display: inline;*/ /*not required*/ 	
+}
+.desktop
+{
+	display: none;
+}
+main 
+{
+	display: block;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em; /*20px;*/
+	/*margin-bottom: 10px;*/
+	padding: 1em; /*20px;*/
+	background-color: white;
+	border-radius: 2em 0 2em 0; /*top left, top right, bottom right, bottom left*/ /*1em;*/ /*10px;*/
+	/*border-bottom: 0.2em solid #093;*/ /*5px solid white;*/	
+	/*border-top: 0.2em solid #093;*/
+	opacity: 0.85; /*it is countary of transparency and its value is between 0-1*/
+}
+footer
+{
+font-size: 0.7em;
+text-align: center;
+margin-top: 2em; /*20px;*/
+color: white;
+}
+.tablet
+{
+	display: none;
+}
+.equip /*this is a class selectors which is done for whatever named as a particular class name*/
+		/*equip is an class name given for images, 'we can upply the following to anything by just adding this class name'*/
+{
+	display: none;
+	/*float: left;
+	padding-right: 20px;*/
+}
+
+/*ul
+{
+	margin-bottom: 70px;
+	list-style-position: inside;
+}
+dt
+{
+	font-weight: bold;
+}
+dd
+{
+	padding-bottom: 20px;
+}*/
+main a
+{
+	background-color: #9D9D93;
+	padding: 0.5em; /*if we increase it, the clicked area will increase*/
+	color: white;
+	text-decoration: none; /*to remove underline*/
+	border-radius: 1em;
+	font-weight: bold;
+}
+footer a
+{
+	color: white;
+	text-decoration: none;
+}
+aside
+{
+	font-style: italic;
+}
+input, select, textarea
+{
+	display: block;
+	margin-bottom: 1em;
+}
+label
+{
+	display: block;
+}
+form ul 
+{
+	list-style-type: none;
+}
+.chkbx
+{
+	display: inline-block;
+}
+.video
+{
+	text-align: center;
+	padding: 1em;
+}
+video
+{
+	max-width: 100%;
+	height: auto;
+	border: 0.5em ridge white;
+}
+#copyright
+{
+	float: left;
+	width: 80%;
+	margin-top: 2em;
+}
+#social
+{
+	float: right;
+	width: 20%;
+}
+#social img
+{
+	padding: 0.5em;
+}
+/*styles for tablet layout*/
+@media only screen and (min-width: /*481*/ 660px)
+{
+	nav li
+	{
+		display: inline;  /*why?*/
+		float: left;
+		width: 18%;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 1%;
+		margin-right: 1%;
+		white-space: nowrap;  /*to make the words in the same line ex "about US"*/
+		border-radius: 0;
+		background-color: transparent; /*so the color will be like the body automatically*/
+	}
+	main
+	{
+		clear: left;
+		/*margin-top: *4em;*/
+		margin-top: -0.3em /*4em*/;	
+		border-radius: 0;
+		overflow: auto;
+	}
+	h1
+	{
+		text-align: center;
+	}
+	figure img
+	{
+		width: 28%;
+		height: 8em;
+		margin: 1%;
+		padding: 1%;
+		background-color: #1D1D1C;
+		display: inline; /*no effect*/
+
+	}
+	figure a /*to remove the padding that is happened in line 113 as the images are inside <a>*/
+	{
+		padding: 0;
+		background-color: transparent; /*cancil its color */
+		text-decoration: none; /*useless because it is an images not text to have a underline*/
+	}
+	.mobile
+	{
+		display: none;
+	}
+	.desktop
+	{
+		display: inline;
+	}
+	.equip
+	{
+		display: inline;
+		float: left;
+		margin-right: 1.5em;
+	}
+	.items
+	{
+		display: block; /*unnecessary*/
+		list-style-position: inside;
+		/*margin-bottom: 5em;*/ /* better solution is to insert'clear' this is not a good solution to increase the space*/
+	}
+	.tablet
+	{
+		display: block;
+		margin-top: -3em;
+		margin-bottom: -1em;
+	}
+	section
+	{
+		padding-bottom: 3em;
+	}
+	section h1
+	{
+		text-align: left;
+	}
+	section a
+	{
+		background-color: transparent;
+		color: #1D1D1C;
+		text-decoration: underline;
+		padding: 0;
+		font-weight: normal;
+	} 
+	dt
+	{
+		font-weight: bold;
+		margin-top: 0.7em;
+	}  
+	.contact
+	{
+		color: #1D1D1C;
+		background-color: transparent;
+		text-decoration: underline;
+		padding: 0;
+	}
+	article
+	{
+		float: left;
+		width: 31%;
+		margin: 0.5%;
+		padding: 0.5%;
+		text-align: center;
+		background-color: #C1D9CA;
+	}
+	main article img
+	{
+		border: solid 0.1em #2D1D1C;
+		margin-left: auto; /*wrong*/
+		margin-right: auto; /*wrong*/	
+	}
+	main article p
+	{
+		color: black;
+		margin-top: 2%;
+		padding: 1%;
+		text-align: left;
+	}
+	main article ul
+	{
+		text-align: left;
+	}
+	aside
+	{
+		background-color: white;
+		padding: 1.5em;
+		margin: 1em;
+		border-radius: 0 5em 5em 5em;
+		box-shadow: 1em 1em 1em #4C4F4D;
+	}
+	/*table
+	{
+		border-collapse: collapse;
+	}
+	td
+	{
+		border: 1px solid ;
+	}*/
+	table
+	{
+		width: 100%;
+		border: 0.1em solid black;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+	}
+	th,td
+	{
+		padding: 1em;
+		border: 0.1em solid black;
+
+	}
+	th
+	{
+		background-color: #1D1D1C;
+		color: white;
+	}
+	caption
+	{
+		font-weight: bold;
+		font-size: 1.5em;
+		padding-bottom: 0.5em;
+	}
+
+	label
+	{
+		float: left;
+		padding-right: 0.5em;
+		text-align: right;
+		width: 10em;
+	}
+	.btn
+	{
+		margin-left: 12em;
+	}
+}/*end of tablet style*/
+/*Style of disktop layout*/
+@media only screen and (min-width:  /*769*/ 830px)
+{
+	body 
+	{
+		/*background: linear-gradient(#FFF,#FF9);*/ /*change the color as accordingly from side to the other side starting from #FFF to #FF9 */
+	/*	background: radial-gradient(#FFF,#FF9); /*change the color as accordingly from inside to outside as multiple circles starting from #FFF to #FF9 */
+		/*background-attachment: fixed;*/ /*to sove repeating white color (#FFF) because the contenct of the page is smaller that the hight of the viewport*/
+		background-color: white;
+	}
+	#container
+	{
+		/*width: 80%;*/
+		background-color: #1D1D1C; /*unnecessary */
+	}
+	nav ul
+	{
+		margin: 0;
+		padding-left: 0.5%;
+		padding-right: 0.5%;
+
+	}
+	nav li
+	{
+		/*border-radius: 0;*/ /*because it is already do in the tablet*/
+		margin-left: 0;
+		margin-right: 0;
+		width: 20%;
+		padding: 0;
+		/*border-top: solid black;
+		border-bottom: solid black;*/
+	}
+	main 
+	{
+		/*border: none;
+		box-shadow: 0.5em 0.5em 0.5em #404040;
+		margin-top: 1em;
+		margin-bottom: 1em;*/
+		background-color: transparent;/*#1D1D1C;*/
+		clear: right;
+	}
+	main p
+	{
+		/*padding-left: 0.5em;
+		padding-right: 0.5em;*/
+		color: white;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+	/*.items /styling about/
+	{
+		margin-bottom: 7em;
+	}*/
+	nav li a
+	{
+		padding: 0.7em;
+	 	display: inline-block;
+	 	text-shadow: 0.2em 0.1em #3D3D35;
+	}
+	nav li a:link
+	{
+		color: #FFF;
+
+	} 
+	nav li a:visited /*when we already clicked the link*/
+	{
+		color: #CCF; /*#FF9*/
+		
+	}
+	nav li a:hover /*when the mouse on the link*/
+	{
+		color: #9D9D93;/*#FF0*/
+		font-style: italic;
+		
+	}
+	/*
+	nav li a:active /*when the link is clikced and held
+	{
+		color: #60C;
+		
+	}
+	*/
+	header
+	{
+		text-align: left;
+	}
+	nav
+	{
+		float: right;
+		margin-top: -7em;
+		margin-right: 3em;
+		margin-bottom: 0;
+		width: 65%;
+	}
+	figure img
+	{
+		height: 15em;
+		opacity: 0.7;
+	}
+	figure img:hover
+	{
+		opacity: 1;
+	}
+	h1
+	{
+		color: white;
+	}
+	footer
+	{
+		background-color: #2A2A2A;
+		padding: 2em;
+		margin-top: -0.2em;
+		overflow: auto;
+	}
+	section
+	{
+		color: white;
+		margin-left: 1em;
+		padding-bottom: 5em;
+	}
+	section a 
+	{
+		color: white;
+	}
+	section p 
+	{
+		margin-left: 0;
+	}
+	main h2
+	{
+		color: white;
+	}
+	.contact
+	{
+		color: white;
+	}
+	main article h2
+	{
+		color: black;
+	}
+	table	
+	{
+		width: 85%;
+		background-color: white;
+
+	}
+	caption
+	{
+		color: white;
+	}
+	form
+	{
+		background-color: white;
+		padding: 1em;
+	}
+	form a
+	{
+		color: black;
+	}
+}
+
